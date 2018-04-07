@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		04C401EA20790FF00013ADF3 /* FrameworkForNS.h in Headers */ = {isa = PBXBuildFile; fileRef = 04C401E820790FF00013ADF3 /* FrameworkForNS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04C401F1207910700013ADF3 /* MyVisanet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C401F0207910700013ADF3 /* MyVisanet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04C401E520790FF00013ADF3 /* FrameworkForNS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameworkForNS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C401E820790FF00013ADF3 /* FrameworkForNS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkForNS.h; sourceTree = "<group>"; };
 		04C401E920790FF00013ADF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C401F0207910700013ADF3 /* MyVisanet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVisanet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				04C401E820790FF00013ADF3 /* FrameworkForNS.h */,
 				04C401E920790FF00013ADF3 /* Info.plist */,
+				04C401F0207910700013ADF3 /* MyVisanet.swift */,
 			);
 			path = FrameworkForNS;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					04C401E420790FEF0013ADF3 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C401F1207910700013ADF3 /* MyVisanet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +264,7 @@
 		04C401EE20790FF00013ADF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.salvador.belatrixsf.FrameworkForNS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		04C401EF20790FF00013ADF3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
