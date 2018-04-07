@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
-  s.name         = "FramewokForNS"
+  s.name         = "FrameworkForNS"
   s.version      = "0.0.1"
-  s.summary      = "This is a FramewokForNS."
+  s.summary      = "This is a FrameworkForNS."
   s.description  = "This is some super FrameworkForNS  that was made by a crazy guy"
   s.homepage     = "https://github.com/salvadorcoronel/framework-ios-nativescript"
   s.license      = "MIT"

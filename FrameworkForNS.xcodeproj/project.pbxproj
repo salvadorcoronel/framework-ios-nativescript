@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		04C401EA20790FF00013ADF3 /* FrameworkForNS.h in Headers */ = {isa = PBXBuildFile; fileRef = 04C401E820790FF00013ADF3 /* FrameworkForNS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04C401F1207910700013ADF3 /* MyVisanet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C401F0207910700013ADF3 /* MyVisanet.swift */; };
+		204D0D9713511F91CD9FB144 /* Pods_FrameworkForNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83488523409F122F731EC92D /* Pods_FrameworkForNS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,9 @@
 		04C401E820790FF00013ADF3 /* FrameworkForNS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkForNS.h; sourceTree = "<group>"; };
 		04C401E920790FF00013ADF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04C401F0207910700013ADF3 /* MyVisanet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVisanet.swift; sourceTree = "<group>"; };
+		0ED7C8BB872CAD6BE33A0FDD /* Pods-FrameworkForNS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkForNS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrameworkForNS/Pods-FrameworkForNS.debug.xcconfig"; sourceTree = "<group>"; };
+		71F660BD73818F4F15DFB3F1 /* Pods-FrameworkForNS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkForNS.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrameworkForNS/Pods-FrameworkForNS.release.xcconfig"; sourceTree = "<group>"; };
+		83488523409F122F731EC92D /* Pods_FrameworkForNS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrameworkForNS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				204D0D9713511F91CD9FB144 /* Pods_FrameworkForNS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +39,8 @@
 			children = (
 				04C401E720790FF00013ADF3 /* FrameworkForNS */,
 				04C401E620790FF00013ADF3 /* Products */,
+				4493D8E5B48088EC923EE998 /* Pods */,
+				58E4ADE35D8C713B147A227A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +62,23 @@
 			path = FrameworkForNS;
 			sourceTree = "<group>";
 		};
+		4493D8E5B48088EC923EE998 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0ED7C8BB872CAD6BE33A0FDD /* Pods-FrameworkForNS.debug.xcconfig */,
+				71F660BD73818F4F15DFB3F1 /* Pods-FrameworkForNS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		58E4ADE35D8C713B147A227A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83488523409F122F731EC92D /* Pods_FrameworkForNS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -73,10 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04C401ED20790FF00013ADF3 /* Build configuration list for PBXNativeTarget "FrameworkForNS" */;
 			buildPhases = (
+				EF541A1F5DC54CCC6A967501 /* [CP] Check Pods Manifest.lock */,
 				04C401E020790FEF0013ADF3 /* Sources */,
 				04C401E120790FEF0013ADF3 /* Frameworks */,
 				04C401E220790FEF0013ADF3 /* Headers */,
 				04C401E320790FEF0013ADF3 /* Resources */,
+				82C04A916C6F5E76CED70C35 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,6 +154,42 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82C04A916C6F5E76CED70C35 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrameworkForNS/Pods-FrameworkForNS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF541A1F5DC54CCC6A967501 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FrameworkForNS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04C401E020790FEF0013ADF3 /* Sources */ = {
@@ -263,6 +325,7 @@
 		};
 		04C401EE20790FF00013ADF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ED7C8BB872CAD6BE33A0FDD /* Pods-FrameworkForNS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -274,11 +337,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = FrameworkForNS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.salvador.belatrixsf.FrameworkForNS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -290,6 +349,7 @@
 		};
 		04C401EF20790FF00013ADF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71F660BD73818F4F15DFB3F1 /* Pods-FrameworkForNS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -301,11 +361,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = FrameworkForNS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.salvador.belatrixsf.FrameworkForNS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
