@@ -11,4 +11,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/salvadorcoronel/framework-ios-nativescript.git", :tag => "#{s.version}" }
   s.source_files  = "**/*"
   # s.public_header_files = "Classes/**/*.h"
+  s.ios.vendored_frameworks = 'VisaNet.framework'
 end

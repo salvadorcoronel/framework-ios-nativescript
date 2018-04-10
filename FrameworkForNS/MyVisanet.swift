@@ -8,8 +8,8 @@
 
 import Foundation
 
-public class MyVisanet {
-    private init() { }
+public class MyVisanet:NSObject {
+    private override init() { }
     public static func openVisanet() -> String {
         return "You're calling method openVisanet()....";
     }
